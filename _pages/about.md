@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Tentang
+permalink: /tentang/
 ---
 
 **Dede Irwanto**, pria kelahiran Kotamobagu, 30 Mei 1992. Lahir sebagai putra sulung dari 3 bersaudara. Saat ini berkatifitas sebagai salah satu Abdi Negara di Pemkab. Bolaang Mongondow.
