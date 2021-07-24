@@ -5,7 +5,7 @@ Setelah kurang lebih 4 bulan beroperasi, akhirnya terpikir juga buat merakit rak
 
 Kebetulan besi siku yang saya beli panjangnya 3 meter. Saya coba hitung dan design modelnya di SketchUp, kurang lebih hasilnya seperti ini:
 
-![alt text](/assets/img/2021-05-09/rak-mini.jpg)
+![alt text](/images/2021-05-09/rak-mini.jpg)
 
 Next... tahap pemotongan dan perakitan.
 

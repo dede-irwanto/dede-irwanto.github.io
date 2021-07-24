@@ -69,27 +69,27 @@ Constraint ini dibuat agar data-data yang ada pada kolom **category_id** (tabel 
 
 Sekarang kita buat EER Diagram untuk melihat relasi antar tabelnya, kebetulan saya menggunakan MySQL Workbench. Berikut screenshoot pembuatannya:
 
-![EER Diagram 01](/assets/img/2021-05-15/01.png)
+![EER Diagram 01](/images/2021-05-15/01.png)
 
-![EER Diagram 02](/assets/img/2021-05-15/02.png)
+![EER Diagram 02](/images/2021-05-15/02.png)
 
-![EER Diagram 03](/assets/img/2021-05-15/03.png)
+![EER Diagram 03](/images/2021-05-15/03.png)
 
-![EER Diagram 04](/assets/img/2021-05-15/04.png)
+![EER Diagram 04](/images/2021-05-15/04.png)
 
-![EER Diagram 05](/assets/img/2021-05-15/05.png)
+![EER Diagram 05](/images/2021-05-15/05.png)
 
-![EER Diagram 06](/assets/img/2021-05-15/06.png)
+![EER Diagram 06](/images/2021-05-15/06.png)
 
-![EER Diagram 07](/assets/img/2021-05-15/07.png)
+![EER Diagram 07](/images/2021-05-15/07.png)
 
-![EER Diagram 08](/assets/img/2021-05-15/08.png)
+![EER Diagram 08](/images/2021-05-15/08.png)
 
-![EER Diagram 09](/assets/img/2021-05-15/09.png)
+![EER Diagram 09](/images/2021-05-15/09.png)
 
 Perhatikan diagram di atas, terdapat garis penghubung antara kedua tabel tersebut. Jika kita klik garis penghubungnya, diperoleh gambar berikut:
 
-![EER Diagram 10](/assets/img/2021-05-15/10.png)
+![EER Diagram 10](/images/2021-05-15/10.png)
 
 **Uji constraint**
 
@@ -97,13 +97,13 @@ Untuk menguji constraint yang kita buat, coba masukkan data pada kolom **categor
 
 Sebelumnya, kita tampilkan dulu data pada tabel **categories**:
 
-![Data pada tabel categories](/assets/img/2021-05-15/11.png)
+![Data pada tabel categories](/images/2021-05-15/11.png)
 
 Sekarang, coba insert data pada tabel **products**:
 
     insert into products(category_id, name) values (4, 'Mesin jahit');
 
-![Error insert products](/assets/img/2021-05-15/13.png)
+![Error insert products](/images/2021-05-15/13.png)
 
 Error di atas terjadi karena kita coba memasukkan data yang tidak ada pada kolom **id** (tidak ada data dengan **id** 4 di tabel **categories**).
 
@@ -122,11 +122,11 @@ Sekarang, kita coba masukkan data pada kolom **category_id** (tabel **_products_
     (2, 'HDD'),
     (1, 'Charger HP');
 
-![Success insert products](/assets/img/2021-05-15/15.png)
+![Success insert products](/images/2021-05-15/15.png)
 
 Tampilkan data pada tabel **products**:
 
-![Data pada tabel products](/assets/img/2021-05-15/12.png)
+![Data pada tabel products](/images/2021-05-15/12.png)
 
 **Menampilkan products berdasarkan category**
 
@@ -134,7 +134,7 @@ Langkah terakhir, tampilkan data **products** berdasarkan **categories**.
 
     select b.name as categories_name, a.name as products_name from products a inner join categories b on a.category_id=b.id;
 
-![Join table](/assets/img/2021-05-15/14.png)
+![Join table](/images/2021-05-15/14.png)
 
 CMIIW.
 
