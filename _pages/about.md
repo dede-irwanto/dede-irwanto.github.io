@@ -4,10 +4,9 @@ title: About
 permalink: /about/
 ---
 
-![](/images/dede.jpg)
+**Dede Irwanto**, pria kelahiran Kotamobagu, 30 Mei 1992. Lahir sebagai putra sulung dari 3 bersaudara. Saat ini berkatifitas sebagai salah satu Abdi Negara di Pemkab. Bolaang Mongondow.
 
-> Pria kelahiran 30 Mei 1992 di Kota Kotamobagu, Sulawesi Utara.
+Penulis sudah menikah dan dikaruniai 3 orang puteri. Penulis dapat dihubungi melalui:
+- Email : id.dedeirwanto@gmail.com
+- SMS / WA : 0823-4836-6034
 
-> Ayah dari 3 orang puteri.
-
-> ASN di Pemkab. Bolaang Mongondow
