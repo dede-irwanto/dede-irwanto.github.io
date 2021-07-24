@@ -5,7 +5,7 @@ permalink: /cari/
 ---
 
 <div id="search-container">
-    <input type="text" id="search-input" placeholder="Search through the blog posts...">
+    <input type="text" id="search-input" placeholder="Cari berdasarkan judul postingan...">
     <ul id="results-container"></ul>
 </div>
 
