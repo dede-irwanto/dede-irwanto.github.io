@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![alt text](/images/dede.jpg)
+![](/images/dede.jpg)
 
 > Pria kelahiran 30 Mei 1992 di Kota Kotamobagu, Sulawesi Utara.
 
