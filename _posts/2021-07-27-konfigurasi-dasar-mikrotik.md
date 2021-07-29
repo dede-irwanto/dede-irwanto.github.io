@@ -1,7 +1,7 @@
 ---
 layout: post
 ---
-Asumsikan kita mememiliki topologi jaringan seperti berikut:
+Asumsikan kita mememiliki topologi jaringan seperti di bawah, dimana ether1 pada mikrotik terhubung dengan Internet dan ether2 terhubung dengan Client:
 
 ![alt text](/images/2021-07-27/topologi.png)
 
