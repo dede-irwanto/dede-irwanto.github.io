@@ -7,9 +7,9 @@ Untuk membuat project web Java menggunakan Maven ada beberapa langkah yang perlu
 
     mvn archetype:generate -DgroupId=io.github.dede-irwanto -DartifactId=example-java-webapp -Dversion=1.0.0-release -DarchetypeCatalog=internal -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-webapp
 
-**2. Tambahkan plugin tomcat7***
+**2. Tambahkan plugin tomcat7**
 
-Plugin ini berfungsi sebagai pengganti web server. Letakkan skrip berikut diantara sintaks <build></build>.
+Plugin ini berfungsi sebagai pengganti web server.
 
     <plugins>
         <plugin>
@@ -38,6 +38,8 @@ Plugin ini berfungsi sebagai pengganti web server. Letakkan skrip berikut dianta
             </configuration>
         </plugin>  
     </plugins>  
+
+Letakkan skrip di atas diantara sintaks \<build>\</build> pada file pom.xml
 
 ![alt text](/images/2021-08-15/pom-xml.png)
 
