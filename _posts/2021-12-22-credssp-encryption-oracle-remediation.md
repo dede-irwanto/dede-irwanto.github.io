@@ -1,9 +1,10 @@
 ---
 layout: post
 ---
-Untuk mengatasi masalah CredSSP saat menggunakan remote desktop di windows lakukan beberapa langkah berikut:
+Untuk mengatasi masalah CredSSP saat menggunakan remote desktop di windows, lakukan beberapa langkah berikut:
 
 **1. Jalankan CMD sebagai Adminstrator**
+
 **2. Copas skrip berikut:**
 
     REG ADD
