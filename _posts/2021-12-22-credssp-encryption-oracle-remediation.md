@@ -8,7 +8,6 @@ Untuk mengatasi masalah CredSSP saat melakukn remote desktop di windows lakukan 
     REG ADD
     HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters\ /v
     AllowEncryptionOracle /t REG_DWORD /d 2
-    net start winnat
 
 CMIIW.
 
