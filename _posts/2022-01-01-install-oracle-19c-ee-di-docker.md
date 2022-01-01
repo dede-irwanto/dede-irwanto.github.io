@@ -7,7 +7,7 @@ Berikut adalah langkah-langkan installasi oracle 19c Enterprise Edition di Docke
 
     git clone https://github.com/oracle/docker-images.git
 
-**2. Download Oracle Database 19c for Linux [https://www.oracle.com/database/technologies/oracle19c-linux-downloads.html], kemudian kopikan ke direktori "/docker-images/OracleDatabase/SingleInstance/dockerfiles/19.3.0"**
+**2. Download Oracle Database 19c for Linux [https://www.oracle.com/database/technologies/oracle19c-linux-downloads.html](https://www.oracle.com/database/technologies/oracle19c-linux-downloads.html), kemudian kopikan ke direktori "/docker-images/OracleDatabase/SingleInstance/dockerfiles/19.3.0"**
 
     cp LINUX.X64_193000_db_home.zip /docker-images/OracleDatabase/SingleInstance/dockerfiles/19.3.0
 
