@@ -8,10 +8,10 @@ layout: post
 **2. Ubah AllowOverride None menjadi AllowOverride All**
 
     Define WWWROOT "c:/webserver/www"
-    
+
     <Directory "${WWWROOT}">
         Options Indexes FollowSymLinks
-        **AllowOverride All**
+        AllowOverride All
         Require all granted
     </Directory>
 
