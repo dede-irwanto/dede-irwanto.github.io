@@ -1,11 +1,11 @@
 ---
 layout: post
 ---
-**1. Uncomment rewrite module pada file httpd.conf**
+Uncomment rewrite module pada file httpd.conf
 
     LoadModule rewrite_module modules/mod_rewrite.so
 
-**2. Ubah AllowOverride None menjadi AllowOverride All**
+Ubah AllowOverride None menjadi AllowOverride All
 
     Define WWWROOT "c:/webserver/www"
 
@@ -15,7 +15,7 @@ layout: post
         Require all granted
     </Directory>
 
-**3. Restart Apache**
+Restart Apache
 
 CMIIW.
 
