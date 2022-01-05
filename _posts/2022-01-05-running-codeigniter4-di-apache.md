@@ -15,6 +15,8 @@ layout: post
         Require all granted
     </Directory>
 
+**3. Restart Apache**
+
 CMIIW.
 
 Sekian, semoga bermanfaat.
