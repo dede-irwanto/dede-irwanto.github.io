@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<section class="container author">
+  <div class="row py-5">
+    <h1 class="fw-bold">{{ page.name }}</h1>
+    {{ content }}
+    <h3 class="fw-bold">Artikel yang ditulis:</h3>
+    <ul class="list-unstyled">
+      {% assign filtered_posts = site.posts | where: 'author', page.short_name %} {%
+      for post in filtered_posts %}
+      <li><a class="text-dark fw-bold" href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>

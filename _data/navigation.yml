@@ -1,0 +1,6 @@
+- name: Home
+  link: /
+- name: Tentang Penulis
+  link: /tentang-penulis
+- name: Artikel
+  link: /artikel

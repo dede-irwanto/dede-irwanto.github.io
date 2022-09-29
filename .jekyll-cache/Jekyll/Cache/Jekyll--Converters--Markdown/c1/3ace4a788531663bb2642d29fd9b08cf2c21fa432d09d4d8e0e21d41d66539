@@ -1,0 +1,23 @@
+I"A<p>Agar aplikasi yang dibangun dengan framework Codeigniter 4 dapat dikenali oleh webserver - dalam hal ini apache 2 -
+<strong>1. Uncomment rewrite module pada file httpd.conf</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LoadModule rewrite_module modules/mod_rewrite.so
+</code></pre></div></div>
+
+<p><strong>2. Ubah AllowOverride None menjadi AllowOverride All</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Define WWWROOT "c:/webserver/www"
+
+&lt;Directory "${WWWROOT}"&gt;
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    Require all granted
+&lt;/Directory&gt;
+</code></pre></div></div>
+
+<p><strong>3. Restart Apache</strong></p>
+
+<p>CMIIW.</p>
+
+<p>Sekian, semoga bermanfaat.</p>
+:ET

@@ -1,0 +1,24 @@
+I"@<p><strong>Internet Control Message Protocol (ICMP)</strong> adalah salah satu protokol inti dari keluarga protokol internet. ICMP utamanya digunakan oleh sistem operasi komputer jaringan untuk mengirim pesan kesalahan yang menyatakan, sebagai contoh, bahwa komputer tujuan tidak bisa dijangkau.</p>
+
+<p>ICMP berbeda tujuan dengan TCP dan UDP dalam hal ICMP tidak digunakan secara langsung oleh aplikasi jaringan milik pengguna. Salah satu pengecualian adalah aplikasi ping yang mengirim pesan ICMP Echo Request (dan menerima Echo Reply) untuk menentukan apakah komputer tujuan dapat dijangkau dan berapa lama paket yang dikirimkan dibalas oleh komputer tujuan. (Sumber: <a href="https://id.wikipedia.org/wiki/Internet_Control_Message_Protocol">Wikipedia</a>)</p>
+
+<p>Agar komputer bisa membalas request ICMP - menampilkan pesan reply pada komputer yang melakukan request ICMP - ada beberapa langkah yang perlu dilakukan:</p>
+
+<ol>
+  <li>Klik start kemudian search <strong>Windows Defender Firewall with Advanced Security</strong></li>
+  <li>Pilih menu <strong>Inbound Rules</strong></li>
+  <li>Pilih menu <strong>New Rule</strong></li>
+  <li>Pilih <strong>Custom</strong> kemudian <strong>Next</strong></li>
+  <li>Pilih <strong>All programs</strong> kemudian <strong>Next</strong></li>
+  <li>Pada <strong>Protocol type</strong> pilih <strong>ICMPv4</strong> kemudian <strong>Next</strong></li>
+  <li>Pilih <strong>Any IP address</strong> kemudian <strong>Next</strong></li>
+  <li>Pilih <strong>Allow the connection</strong> kemudian <strong>Next</strong></li>
+  <li>Centang <strong>Domain, Private dan Public</strong> kemudian <strong>Next</strong></li>
+  <li>Pada text <strong>Name</strong> tuliskan nama rule <strong>Allow ICMP request</strong></li>
+  <li>Klik tombol <strong>Finish</strong></li>
+</ol>
+
+<p>CMIIW.</p>
+
+<p>Sekian, semoga bermanfaat.</p>
+:ET

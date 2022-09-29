@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<section class="container post">
+  <div class="row pt-5">
+    <div class="col-lg-9 col-12">
+      <div class="col-12 post-details">
+        <div class="card mb-2 border-0 {%if page.url=='/'%}post-card{%endif%} post-content" data-aos="fade-up"
+          data-aos-duration="1000">
+          <img src="/images/{{page.date|date: '%Y-%m-%d'}}/post-image-feature.jpg" class="rounded mb-4"
+            alt="{{page.keywords}}">
+          {% assign tags = page.tags %}
+          <div class="d-flex flex-row mb-3">
+            {% for tag in tags %}
+            <a href="/t/{{tag|downcase}}"><span class="py-2 me-2 badge bg-dark">{{tag}}</span></a>
+            {% endfor %}
+          </div>
+          <div class="card-block">
+            <h1 class="card-title h2 fw-bold">{{ page.title | escape }}</h1>
+            <p>
+              {% assign author = site.authors | where:
+              'short_name', page.author | first %} {% if author %}
+              Oleh <a class="text-dark fw-bold" href="{{ author.url }}">{{ author.name }}</a>
+              <span class="mx-2">&bullet;</span>
+              {{ page.date | date_to_long_string }}
+              {% endif %}
+            </p>
+            {{ content }}
+          </div>
+        </div>
+      </div>
+      {%include pagenavigation.html%}
+      <div class="d-flex align-items-center my-5">
+        <div class="flex-shrink-0">
+          <img src="/assets/images/dee-avatar.jpg" alt="Dede Irwanto, Avatar" class="img-thumbnail rounded-circle">
+        </div>
+        <div class="ms-3">
+          <div>
+            <a href="{{author.url}}" class="text-dark">
+              <span class="h5 fw-bold">Dede Irwanto</span>
+            </a>
+          </div>
+          <span class="text-muted small">
+            Web Developer | Penulis di <a class="fw-bold text-dark"
+              href="https://dede-irwanto.github.io">dede-irwanto.github.io</a>
+          </span>
+        </div>
+      </div>
+      <div id="disqus_thread"></div>
+      <script>
+        (function () {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://dedeirwanto.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+          Disqus.</a></noscript>
+      <div id="disqus_thread"></div>
+      <script>
+        (function () {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://dedeirwanto.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+          Disqus.</a></noscript>
+    </div>
+    <div class="col-lg-3 col-12">
+      {%include sidebar.html%}
+    </div>
+  </div>
+</section>

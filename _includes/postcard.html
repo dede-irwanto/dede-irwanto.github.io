@@ -1,0 +1,15 @@
+{% assign author = site.authors | where: 'short_name', post.author | first %}
+<div class="card border-0 {%if page.url=='/'%}post-card{%endif%}">
+    <img src="/images/{{post.date|date: '%Y-%m-%d'}}/post-image-feature.jpg" class="rounded mb-4"
+        alt="{{post.keywords}}">
+    <div class="card-block">
+
+        <h5 class="card-title h4 fw-bold"><a class="text-dark text-decoration-none fw-bold"
+                href="{{post.url}}">{{post.title}}</a></h5>
+        <p class="card-text"><small class="text-muted">Oleh <a class="text-dark text-decoration-none fw-bold"
+                    href="{{ author.url }}">{{
+                    author.name}}</a> <span class="mx-1">&bullet;</span> {{post.date | date_to_long_string}}
+            </small>
+        </p>
+    </div>
+</div>

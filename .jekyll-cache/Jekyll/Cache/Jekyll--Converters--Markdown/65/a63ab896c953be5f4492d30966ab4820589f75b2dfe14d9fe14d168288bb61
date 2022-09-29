@@ -1,0 +1,18 @@
+I"	<p>Beberapa waktu lalu, ketika hendak menambahkan user baru di Oracle 19c muncul error <strong>ORA-65096: invalid common user or role name</strong>. Untuk mengatasinya, login sebagai sysdba dan ketikkan skrip berikut:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alter session set "_ORACLE_SCRIPT"=true;
+</code></pre></div></div>
+
+<p>Setelah itu, coba create ulang user tadi.</p>
+
+<p><strong>Catatan:</strong></p>
+
+<p>Untuk alasan keamanan, sebaiknya set ulang ORACLE_SCRIPT menjadi false:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alter session set "_ORACLE_SCRIPT"=false;
+</code></pre></div></div>
+
+<p>CMIIW.</p>
+
+<p>Sekian, semoga bermanfaat.</p>
+:ET

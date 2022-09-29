@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title"
+    content="Peta Kabupaten Bolaang Mongondow — Dede-Irwanto.Github.io — Tulisan Seorang Pemalas.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Peta Kabupaten Bolaang Mongondow — Dede-Irwanto.Github.io — Tulisan Seorang
+    Pemalas.</title>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <meta name="keywords" content="Peta, Bolaang Mongondow">
+  <meta name="robots" content="index, follow">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Peta Kabupaten Bolaang Mongondow</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Peta Kabupaten Bolaang Mongondow" />
+<meta name="author" content="dee" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Setelah melihat beberapa tutorial terkait penggunaan QGIS dalam membuat peta, iseng-iseng saya coba membuat peta Kab. Bolaang Mongondow - kebetulan tempat saya mengais rejeki disini - dan berikut hasilnya:" />
+<meta property="og:description" content="Setelah melihat beberapa tutorial terkait penggunaan QGIS dalam membuat peta, iseng-iseng saya coba membuat peta Kab. Bolaang Mongondow - kebetulan tempat saya mengais rejeki disini - dan berikut hasilnya:" />
+<link rel="canonical" href="http://localhost:4000/2021/08/14/peta-kabupaten-bolaang-mongondow.html" />
+<meta property="og:url" content="http://localhost:4000/2021/08/14/peta-kabupaten-bolaang-mongondow.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-08-14T00:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Peta Kabupaten Bolaang Mongondow" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"dee"},"dateModified":"2021-08-14T00:00:00+08:00","datePublished":"2021-08-14T00:00:00+08:00","description":"Setelah melihat beberapa tutorial terkait penggunaan QGIS dalam membuat peta, iseng-iseng saya coba membuat peta Kab. Bolaang Mongondow - kebetulan tempat saya mengais rejeki disini - dan berikut hasilnya:","headline":"Peta Kabupaten Bolaang Mongondow","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2021/08/14/peta-kabupaten-bolaang-mongondow.html"},"url":"http://localhost:4000/2021/08/14/peta-kabupaten-bolaang-mongondow.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link href="https://dede-irwanto.github.io/" rel="canonical" />
+  <!-- Bootstrap CSS -->
+  <link href="/assets/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <!-- AOS CSS  -->
+  <link href="/assets/aos/aos.css" rel="stylesheet">
+  <!-- Custom CSS  -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <!-- Bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Fontawesome Icon -->
+  <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+  <!-- Algolia -->
+  <link rel="stylesheet" href="/assets/algolia/autocomplete-theme-classic.css" />
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg bg-white fixed-top">
+  <div class="container px-0 align-items-center" style="width: 1052px">
+    <a class="navbar-brand" href="/">
+      <span class="h4 fw-bold">Dee's Logs</span>
+    </a>
+    <span class="text-dark mx-2 d-none d-lg-block">&#8942;</span>
+    <a class="nav-link mx-2 d-none d-lg-block" href="https://facebook.com/dede.irwanto" target="_blank"
+      rel="noopener noreferrer">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a class="nav-link mx-2 d-none d-lg-block" href="https://twitter.com/id_dedeirwanto" target="_blank"
+      rel="noopener noreferrer">
+      <i class="bi bi-twitter"></i>
+    </a>
+    <a class="nav-link mx-2 d-none d-lg-block" href="https://instagram.com/id.dedeirwanto" target="_blank"
+      rel="noopener noreferrer">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a class="nav-link mx-2 d-none d-lg-block" href="https://github.com/dede-irwanto" target="_blank"
+      rel="noopener noreferrer">
+      <i class="bi bi-github"></i>
+    </a>
+
+    <form class="nav-link navbar-center">
+      <div id="autocomplete"></div>
+    </form>
+
+    <button class=" navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dee's Logs</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1">
+          
+          <li class="nav-item">
+            <a href="/" class="nav-link fw-bold ">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="/tentang-penulis" class="nav-link fw-bold ">Tentang Penulis</a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="/artikel" class="nav-link fw-bold ">Artikel</a>
+          </li>
+          
+        </ul>
+        <div class="row d-lg-none">
+          <div class="col">
+            <a class="nav-link" href="https://facebook.com/dede.irwanto" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+          <div class="col">
+            <a class="nav-link" href="https://twitter.com/id_dedeirwanto" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </div>
+          <div class="col">
+            <a class="nav-link" href="https://instagram.com/id.dedeirwanto" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+          <div class="col">
+            <a class="nav-link" href="https://github.com/dede-irwanto" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 col-12">
+        <!-- Content -->
+        <section class="main-section" data-aos="zoom-out" data-aos-duration="1500">
+          <section class="container post">
+  <div class="row pt-5">
+    <div class="col-lg-9 col-12">
+      <div class="col-12 post-details">
+        <div class="card mb-2 border-0  post-content" data-aos="fade-up"
+          data-aos-duration="1000">
+          <img src="/images/2021-08-14/post-image-feature.jpg" class="rounded mb-4"
+            alt="Peta, Bolaang Mongondow">
+          
+          <div class="d-flex flex-row mb-3">
+            
+            <a href="/t/peta"><span class="py-2 me-2 badge bg-dark">Peta</span></a>
+            
+            <a href="/t/qgis"><span class="py-2 me-2 badge bg-dark">QGIS</span></a>
+            
+          </div>
+          <div class="card-block">
+            <h1 class="card-title h2 fw-bold">Peta Kabupaten Bolaang Mongondow</h1>
+            <p>
+               
+              Oleh <a class="text-dark fw-bold" href="/authors/dee.html">Dede Irwanto</a>
+              <span class="mx-2">&bullet;</span>
+              14 August 2021
+              
+            </p>
+            <p>Setelah melihat beberapa tutorial terkait penggunaan QGIS dalam membuat peta, iseng-iseng saya coba membuat peta Kab. Bolaang Mongondow - kebetulan tempat saya mengais rejeki disini - dan berikut hasilnya:</p>
+
+<p><img src="/images/2021-08-14/peta-bolmong.png" alt="alt text" /></p>
+
+<p>Peta Kab. Bolaang Mongondow berdasarkan Kecamatan. Dibuat menggunakan QGIS.</p>
+
+<p>Download file shp di:
+<a href="https://tanahair.indonesia.go.id/portal-web">https://tanahair.indonesia.go.id/portal-web</a></p>
+
+<p>CMIIW.</p>
+
+<p>Sekian, semoga bermanfaat.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-between border-top border-bottom">
+    <div class="col-6 text-center py-5 border-end">
+        
+        <a class="prev text-dark" href="/2021/07/27/konfigurasi-dasar-mikrotik-router-board.html">&laquo; Konfigurasi Dasar Mikrotik Router Board</a>
+        
+    </div>
+    <div class="col-6 text-center py-5">
+        
+        <a class="next text-dark" href="/2021/12/22/mengatasi-masalah-credssp-encryption-oracle-remediation.html">Mengatasi Masalah Credssp Encryption Oracle Remediation &raquo;</a>
+        
+    </div>
+</div>
+      <div class="d-flex align-items-center my-5">
+        <div class="flex-shrink-0">
+          <img src="/assets/images/dee-avatar.jpg" alt="Dede Irwanto, Avatar" class="img-thumbnail rounded-circle">
+        </div>
+        <div class="ms-3">
+          <div>
+            <a href="/authors/dee.html" class="text-dark">
+              <span class="h5 fw-bold">Dede Irwanto</span>
+            </a>
+          </div>
+          <span class="text-muted small">
+            Web Developer | Penulis di <a class="fw-bold text-dark"
+              href="https://dede-irwanto.github.io">dede-irwanto.github.io</a>
+          </span>
+        </div>
+      </div>
+      <div id="disqus_thread"></div>
+      <script>
+        (function () {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://dedeirwanto.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+          Disqus.</a></noscript>
+      <div id="disqus_thread"></div>
+      <script>
+        (function () {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://dedeirwanto.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+          Disqus.</a></noscript>
+    </div>
+    <div class="col-lg-3 col-12">
+      <div class="sidebar">
+    
+    <div class="card p-2 mb-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+    <h5 class="my-4 text-dark">Terbaru</h5>
+    <ul class="list-group list-group-flush">
+        
+        <li class="list-group-item"><a class="text-dark small" href="/2022/01/06/allow-internet-control-message-protocol-request-di-windows-11.html"><span
+                    class="small">Allow Internet Control Message Protocol Request Di Windows 11</span></a></li>
+        
+        <li class="list-group-item"><a class="text-dark small" href="/2022/01/05/menjalankan-codeigniter-4-di-apache.html"><span
+                    class="small">Menjalankan Codeigniter 4 Di Apache</span></a></li>
+        
+        <li class="list-group-item"><a class="text-dark small" href="/2022/01/01/install-oracle-19c-enterprise-edition-di-docker.html"><span
+                    class="small">Install Oracle 19c Enterprise Edition Di Docker</span></a></li>
+        
+        <li class="list-group-item"><a class="text-dark small" href="/2021/12/29/mengatasi-error-ora-12514-pada-oracle.html"><span
+                    class="small">Mengatasi Error Ora 12514 Pada Oracle</span></a></li>
+        
+        <li class="list-group-item"><a class="text-dark small" href="/2021/12/22/mengatasi-masalah-credssp-encryption-oracle-remediation.html"><span
+                    class="small">Mengatasi Masalah Credssp Encryption Oracle Remediation</span></a></li>
+        
+    </ul>
+</div>
+</div>
+    </div>
+  </div>
+</section>
+        </section>
+
+        <!-- totop -->
+        <h2>
+          <i id="back-to-top" class="bi bi-caret-up-square-fill"></i>
+        </h2>
+
+        <!-- Footer -->
+        <footer class="pt-5 pb-3 small text-dark">
+          <div class="container">
+            <div class="row justify-content-lg-between align-items-center border-top border-4 border-danger pt-3">
+              <div class="col-lg-6 justify-content-lg-start justify-content-start ps-0">
+                Copyright &copy; <a class="text-dark text-decoration-none fw-bold"
+                  href="https://dede-irwanto.github.io">Dede
+                  Irwanto</a>. All
+                rights reserved.
+              </div>
+              <div class="col-lg-6 justify-content-lg-end pe-0">
+                <ul class="nav float-lg-end">
+    
+    <li class="nav-item">
+        <a href="/" class="text-dark nav-link ">Home</a>
+    </li>
+    
+    <li class="nav-item">
+        <a href="/kebijakan-privasi" class="text-dark nav-link ">Kebijakan Privasi</a>
+    </li>
+    
+    <li class="nav-item">
+        <a href="/syarat-layanan" class="text-dark nav-link ">Syarat Layanan</a>
+    </li>
+    
+</ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JavaScript Bundle with Popper -->
+  <script src="/assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- AOS JavaScript -->
+  <script src="/assets/aos/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- JQuery  -->
+  <script src="/assets/jquery/jquery-3.6.1.min.js"></script>
+  <!-- Custom JavaScript  -->
+  <script src="/assets/js/scripts.js"></script>
+  <!-- Algolia -->
+  <script src="/assets/algolia/algoliasearch-lite.umd.js"></script>
+  <script src="/assets/algolia/autocomplete-js.js"></script>
+  <script src="/assets/js/search.js" type="module"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<ul class="nav float-lg-end">
+    {% for item in site.data.footernav %}
+    <li class="nav-item">
+        <a href="{{ item.link }}" class="text-dark nav-link {%if page.url==item.link %}current{% endif %}">{{
+            item.name }}</a>
+    </li>
+    {% endfor %}
+</ul>

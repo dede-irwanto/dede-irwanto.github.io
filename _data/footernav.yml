@@ -1,0 +1,6 @@
+- name: Home
+  link: /
+- name: Kebijakan Privasi
+  link: /kebijakan-privasi
+- name: Syarat Layanan
+  link: /syarat-layanan

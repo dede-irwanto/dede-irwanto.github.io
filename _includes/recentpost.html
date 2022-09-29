@@ -1,0 +1,9 @@
+<div class="card p-2 mb-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+    <h5 class="my-4 text-dark">Terbaru</h5>
+    <ul class="list-group list-group-flush">
+        {% for post in site.posts limit:5 %}
+        <li class="list-group-item"><a class="text-dark small" href="{{post.url}}"><span
+                    class="small">{{post.title}}</span></a></li>
+        {%endfor%}
+    </ul>
+</div>
