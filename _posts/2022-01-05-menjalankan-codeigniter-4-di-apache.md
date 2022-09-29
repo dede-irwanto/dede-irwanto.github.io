@@ -5,7 +5,8 @@ tags: ["Codeigniter", "Programming", "Backend", "PHP"]
 keywords: PHP, Codeigniter4, Programming, BackEnd
 ---
 
-Agar aplikasi yang dibangun dengan framework Codeigniter 4 dapat dikenali oleh webserver - dalam hal ini apache 2 -
+Agar aplikasi yang dibangun dengan framework Codeigniter 4 dapat dikenali oleh webserver - dalam hal ini Apache 2 -, ada beberapa langkah yang harus dilakukan:
+
 **1. Uncomment rewrite module pada file httpd.conf**
 
     LoadModule rewrite_module modules/mod_rewrite.so
