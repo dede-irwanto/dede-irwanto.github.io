@@ -5,11 +5,9 @@ tags: ["ICMP", "Firewall"]
 keywords: ICMP, Firewall
 ---
 
-**Internet Control Message Protocol (ICMP)** adalah salah satu protokol inti dari keluarga protokol internet. ICMP utamanya digunakan oleh sistem operasi komputer jaringan untuk mengirim pesan kesalahan yang menyatakan, sebagai contoh, bahwa komputer tujuan tidak bisa dijangkau.
+Secara umum, **Internet Control Message Protocol (ICMP)** adalah suatu protokol jaringan yang bertugas untuk mengirim dan menerima pesan kepada host-host yang terhubung dalam sebuah jaringan. Salah satu program utility yang memanfaatkan protokol ini adalah **ping**.
 
-ICMP berbeda tujuan dengan TCP dan UDP dalam hal ICMP tidak digunakan secara langsung oleh aplikasi jaringan milik pengguna. Salah satu pengecualian adalah aplikasi ping yang mengirim pesan ICMP Echo Request (dan menerima Echo Reply) untuk menentukan apakah komputer tujuan dapat dijangkau dan berapa lama paket yang dikirimkan dibalas oleh komputer tujuan. (Sumber: [Wikipedia](https://id.wikipedia.org/wiki/Internet_Control_Message_Protocol))
-
-Agar komputer bisa membalas request ICMP - menampilkan pesan reply pada komputer yang melakukan request ICMP - ada beberapa langkah yang perlu dilakukan:
+Secara default, system operasi seperti Windows mendisable protokol **ICMP** ini. Sehingga ketika kita menggunakan perintah **ping** untuk mengecek koneksi antara suatu host dengan host lainnya maka akan direspon dengan **Request time out**. Oleh karenanya, agar host-host tersebut bisa saling berkomunikasi, terlebih dahulu kita harus mengaktifkan protkol ini. Berikut langkah-langkahnya:
 
 1. Klik start kemudian search **Windows Defender Firewall with Advanced Security**
 2. Pilih menu **Inbound Rules**

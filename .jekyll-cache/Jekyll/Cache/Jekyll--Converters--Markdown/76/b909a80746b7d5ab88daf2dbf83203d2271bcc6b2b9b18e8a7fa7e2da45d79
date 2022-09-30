@@ -1,5 +1,6 @@
-I"A<p>Agar aplikasi yang dibangun dengan framework Codeigniter 4 dapat dikenali oleh webserver - dalam hal ini apache 2 -
-<strong>1. Uncomment rewrite module pada file httpd.conf</strong></p>
+I"u<p>Agar aplikasi yang dibangun dengan framework Codeigniter 4 dapat dikenali oleh webserver - dalam hal ini Apache 2 -, ada beberapa langkah yang harus dilakukan:</p>
+
+<p><strong>1. Uncomment rewrite module pada file httpd.conf</strong></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LoadModule rewrite_module modules/mod_rewrite.so
 </code></pre></div></div>

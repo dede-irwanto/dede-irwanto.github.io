@@ -12,6 +12,10 @@
   <title>Allow Internet Control Message Protocol Request Di Windows 11 — Dede-Irwanto.Github.io — Tulisan Seorang
     Pemalas.</title>
   <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2833626224056161"
+    crossorigin="anonymous"></script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
   <meta name="keywords" content="ICMP, Firewall">
   <meta name="robots" content="index, follow">
   <!-- Begin Jekyll SEO tag v2.8.0 -->
@@ -20,8 +24,8 @@
 <meta property="og:title" content="Allow Internet Control Message Protocol Request Di Windows 11" />
 <meta name="author" content="dee" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Internet Control Message Protocol (ICMP) adalah salah satu protokol inti dari keluarga protokol internet. ICMP utamanya digunakan oleh sistem operasi komputer jaringan untuk mengirim pesan kesalahan yang menyatakan, sebagai contoh, bahwa komputer tujuan tidak bisa dijangkau." />
-<meta property="og:description" content="Internet Control Message Protocol (ICMP) adalah salah satu protokol inti dari keluarga protokol internet. ICMP utamanya digunakan oleh sistem operasi komputer jaringan untuk mengirim pesan kesalahan yang menyatakan, sebagai contoh, bahwa komputer tujuan tidak bisa dijangkau." />
+<meta name="description" content="Secara umum, Internet Control Message Protocol (ICMP) adalah suatu protokol jaringan yang bertugas untuk mengirim dan menerima pesan kepada host-host yang terhubung dalam sebuah jaringan. Salah satu program utility yang memanfaatkan protokol ini adalah ping." />
+<meta property="og:description" content="Secara umum, Internet Control Message Protocol (ICMP) adalah suatu protokol jaringan yang bertugas untuk mengirim dan menerima pesan kepada host-host yang terhubung dalam sebuah jaringan. Salah satu program utility yang memanfaatkan protokol ini adalah ping." />
 <link rel="canonical" href="http://localhost:4000/2022/01/06/allow-internet-control-message-protocol-request-di-windows-11.html" />
 <meta property="og:url" content="http://localhost:4000/2022/01/06/allow-internet-control-message-protocol-request-di-windows-11.html" />
 <meta property="og:type" content="article" />
@@ -29,7 +33,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Allow Internet Control Message Protocol Request Di Windows 11" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"dee"},"dateModified":"2022-01-06T00:00:00+08:00","datePublished":"2022-01-06T00:00:00+08:00","description":"Internet Control Message Protocol (ICMP) adalah salah satu protokol inti dari keluarga protokol internet. ICMP utamanya digunakan oleh sistem operasi komputer jaringan untuk mengirim pesan kesalahan yang menyatakan, sebagai contoh, bahwa komputer tujuan tidak bisa dijangkau.","headline":"Allow Internet Control Message Protocol Request Di Windows 11","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2022/01/06/allow-internet-control-message-protocol-request-di-windows-11.html"},"url":"http://localhost:4000/2022/01/06/allow-internet-control-message-protocol-request-di-windows-11.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"dee"},"dateModified":"2022-01-06T00:00:00+08:00","datePublished":"2022-01-06T00:00:00+08:00","description":"Secara umum, Internet Control Message Protocol (ICMP) adalah suatu protokol jaringan yang bertugas untuk mengirim dan menerima pesan kepada host-host yang terhubung dalam sebuah jaringan. Salah satu program utility yang memanfaatkan protokol ini adalah ping.","headline":"Allow Internet Control Message Protocol Request Di Windows 11","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2022/01/06/allow-internet-control-message-protocol-request-di-windows-11.html"},"url":"http://localhost:4000/2022/01/06/allow-internet-control-message-protocol-request-di-windows-11.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -159,11 +163,9 @@
               06 January 2022
               
             </p>
-            <p><strong>Internet Control Message Protocol (ICMP)</strong> adalah salah satu protokol inti dari keluarga protokol internet. ICMP utamanya digunakan oleh sistem operasi komputer jaringan untuk mengirim pesan kesalahan yang menyatakan, sebagai contoh, bahwa komputer tujuan tidak bisa dijangkau.</p>
+            <p>Secara umum, <strong>Internet Control Message Protocol (ICMP)</strong> adalah suatu protokol jaringan yang bertugas untuk mengirim dan menerima pesan kepada host-host yang terhubung dalam sebuah jaringan. Salah satu program utility yang memanfaatkan protokol ini adalah <strong>ping</strong>.</p>
 
-<p>ICMP berbeda tujuan dengan TCP dan UDP dalam hal ICMP tidak digunakan secara langsung oleh aplikasi jaringan milik pengguna. Salah satu pengecualian adalah aplikasi ping yang mengirim pesan ICMP Echo Request (dan menerima Echo Reply) untuk menentukan apakah komputer tujuan dapat dijangkau dan berapa lama paket yang dikirimkan dibalas oleh komputer tujuan. (Sumber: <a href="https://id.wikipedia.org/wiki/Internet_Control_Message_Protocol">Wikipedia</a>)</p>
-
-<p>Agar komputer bisa membalas request ICMP - menampilkan pesan reply pada komputer yang melakukan request ICMP - ada beberapa langkah yang perlu dilakukan:</p>
+<p>Secara default, system operasi seperti Windows mendisable protokol <strong>ICMP</strong> ini. Sehingga ketika kita menggunakan perintah <strong>ping</strong> untuk mengecek koneksi antara suatu host dengan host lainnya maka akan direspon dengan <strong>Request time out</strong>. Oleh karenanya, agar host-host tersebut bisa saling berkomunikasi, terlebih dahulu kita harus mengaktifkan protkol ini. Berikut langkah-langkahnya:</p>
 
 <ol>
   <li>Klik start kemudian search <strong>Windows Defender Firewall with Advanced Security</strong></li>
@@ -237,7 +239,8 @@
     </div>
     <div class="col-lg-3 col-12">
       <div class="sidebar">
-    
+    <amp-auto-ads type="adsense" data-ad-client="ca-pub-2833626224056161">
+</amp-auto-ads>
     <div class="card p-2 mb-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
     <h5 class="my-4 text-dark">Terbaru</h5>
     <ul class="list-group list-group-flush">

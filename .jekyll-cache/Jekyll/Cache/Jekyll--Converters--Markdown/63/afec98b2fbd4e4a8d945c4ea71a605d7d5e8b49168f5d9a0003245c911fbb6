@@ -1,0 +1,22 @@
+I"V<p>Secara umum, <strong>Internet Control Message Protocol (ICMP)</strong> adalah suatu protokol jaringan yang bertugas untuk mengirim dan menerima pesan kepada host-host yang terhubung dalam sebuah jaringan. Salah satu program utility yang memanfaatkan protokol ini adalah <strong>ping</strong>.</p>
+
+<p>Secara default, system operasi seperti Windows mendisable protokol <strong>ICMP</strong> ini. Sehingga ketika kita menggunakan perintah <strong>ping</strong> untuk mengecek suatu host maka akan direspon dengan <strong>Request time out</strong>. Oleh karenanya, agar beberapa host pada sebuah jaringan bisa berkomunikasi melalui protokol ini ada beberapa langkah yang harus dilakukan:</p>
+
+<ol>
+  <li>Klik start kemudian search <strong>Windows Defender Firewall with Advanced Security</strong></li>
+  <li>Pilih menu <strong>Inbound Rules</strong></li>
+  <li>Pilih menu <strong>New Rule</strong></li>
+  <li>Pilih <strong>Custom</strong> kemudian <strong>Next</strong></li>
+  <li>Pilih <strong>All programs</strong> kemudian <strong>Next</strong></li>
+  <li>Pada <strong>Protocol type</strong> pilih <strong>ICMPv4</strong> kemudian <strong>Next</strong></li>
+  <li>Pilih <strong>Any IP address</strong> kemudian <strong>Next</strong></li>
+  <li>Pilih <strong>Allow the connection</strong> kemudian <strong>Next</strong></li>
+  <li>Centang <strong>Domain, Private dan Public</strong> kemudian <strong>Next</strong></li>
+  <li>Pada text <strong>Name</strong> tuliskan nama rule <strong>Allow ICMP request</strong></li>
+  <li>Klik tombol <strong>Finish</strong></li>
+</ol>
+
+<p>CMIIW.</p>
+
+<p>Sekian, semoga bermanfaat.</p>
+:ET

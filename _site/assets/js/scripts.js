@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $("img").addClass("img-fluid");
   $(".post-card > *").slice(0, 8).show();
   $("#loadMore").on("click", function (e) {
     e.preventDefault();
