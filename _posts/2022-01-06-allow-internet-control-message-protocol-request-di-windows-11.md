@@ -5,7 +5,7 @@ tags: ["ICMP", "Firewall"]
 keywords: ICMP, Firewall
 ---
 
-Secara umum, **Internet Control Message Protocol (ICMP)** adalah suatu protokol jaringan yang bertugas untuk mengirim dan menerima pesan kepada host-host yang terhubung dalam sebuah jaringan. Salah satu program utility yang memanfaatkan protokol ini adalah **ping**.
+**Internet Control Message Protocol (ICMP)** adalah suatu protokol jaringan yang bertugas untuk mengirim dan menerima pesan kepada host-host yang terhubung dalam sebuah jaringan. Salah satu program utility yang memanfaatkan protokol ini adalah **ping**.
 
 Secara default, system operasi seperti Windows mendisable protokol **ICMP** ini. Sehingga ketika kita menggunakan perintah **ping** untuk mengecek koneksi antara suatu host dengan host lainnya maka akan direspon dengan **Request time out**. Oleh karenanya, agar host-host tersebut bisa saling berkomunikasi, terlebih dahulu kita harus mengaktifkan protkol ini. Berikut langkah-langkahnya:
 
