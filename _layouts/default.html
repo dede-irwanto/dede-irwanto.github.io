@@ -38,38 +38,35 @@
 <body>
   <!-- Navbar  -->
   {% include navigation.html %}
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 offset-lg-1 col-12">
-        <!-- Content -->
-        <section class="main-section" data-aos="zoom-out" data-aos-duration="1500">
-          {{ content }}
-        </section>
+  <div class="col-lg-10 offset-lg-1 col-12">
+    <!-- Content -->
+    <section class="main-section" data-aos="zoom-out" data-aos-duration="1500">
+      {{ content }}
+    </section>
 
-        <!-- totop -->
-        <h2>
-          <i id="back-to-top" class="bi bi-caret-up-square-fill"></i>
-        </h2>
+    <!-- totop -->
+    <h2>
+      <i id="back-to-top" class="bi bi-caret-up-square-fill"></i>
+    </h2>
 
-        <!-- Footer -->
-        <footer class="pt-5 pb-3 small text-dark">
-          <div class="container">
-            <div class="row justify-content-lg-between align-items-center border-top border-4 border-danger pt-3">
-              <div class="col-lg-6 justify-content-lg-start justify-content-start ps-0">
-                Copyright &copy; <a class="text-dark text-decoration-none fw-bold"
-                  href="https://dede-irwanto.github.io">Dede
-                  Irwanto</a>. All
-                rights reserved.
-              </div>
-              <div class="col-lg-6 justify-content-lg-end pe-0">
-                {% include footernav.html %}
-              </div>
-            </div>
+    <!-- Footer -->
+    <footer class="pt-5 pb-3 small text-dark">
+      <div class="container">
+        <div class="row justify-content-lg-between align-items-center border-top border-4 border-danger pt-3">
+          <div class="col-lg-6 justify-content-lg-start justify-content-start ps-0">
+            Copyright &copy; <a class="text-dark text-decoration-none fw-bold"
+              href="https://dede-irwanto.github.io">Dede
+              Irwanto</a>. All
+            rights reserved.
           </div>
-        </footer>
+          <div class="col-lg-6 justify-content-lg-end pe-0">
+            {% include footernav.html %}
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
   </div>
+
   <!-- Bootstrap JavaScript Bundle with Popper -->
   <script src="/assets/bootstrap/bootstrap.bundle.min.js"></script>
   <!-- AOS JavaScript -->
