@@ -2,4 +2,4 @@
 
 ### Tulisan seorang pemalas.
 
-Perhatian! Situs ini berisi tulisan-tulisan tidak berguna. Klik tombol close apabila benar adanya.
+Ikatlah ilmu dengan postingan.
