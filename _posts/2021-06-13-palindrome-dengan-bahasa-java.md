@@ -9,7 +9,7 @@ Palindrome adalah sususan kata, kalimat, atau angka yang baik dibaca dari depan 
 
 Pada tulisan ini kita akan membuat sebuah program Java untuk menentukan apakah suatu kata atau kalimat merupakan Palindrome atau bukan. Ada banyak algoritma yang bisa digunakan untuk membuat program ini, namun saya hanya akan membahas beberapa saja.
 
-#### **ALGORITMA I**
+**ALGORITMA I**
 
 1. Masukkan sebuah kata/kalimat
 2. Balikan kata/kalimat tersebut
@@ -57,7 +57,7 @@ Pada tulisan ini kita akan membuat sebuah program Java untuk menentukan apakah s
 
     java Palindrome
 
-#### **ALGORITMA II**
+**ALGORITMA II**
 
 1. Masukkan sebuah kata/kalimat
 2. Bandingkan setiap huruf dari kata/kalimat tersebut dengan pola 1:5, 2:4. Misalkan kata yang dimasukkan adalah **K A T A K**, maka kita akan membandingkan karakter 1 dan 5 kemudian 2 dan 4. Karena jumlah karakternya ganjil, maka kita tidak perlu membandingkan karakter diposisi tengah.
