@@ -82,7 +82,9 @@ Karena Spring Boot berjalan di atas JVM, maka terlebih dahulu kita harus mengins
 
 7. Cek apakah JDK sudah berhasil diinstall. Buka terminal windows, kemudian ketikkan perintah berikut:
 
-   `java --version`
+   ```
+   java --version
+   ```
 
    ![Cek JDK version](/images/2022-10-07/test-jdk-installation.jpg)
 
@@ -106,7 +108,9 @@ Maven merupakan salah satu build tools yang sangat populer. Tool ini banyak digu
 
 4. Cek apakah Maven sudah berhasil diinstall.
 
-   `mvn --version`
+   ```
+   mvn --version
+   ```
 
    ![Cek Maven version](/images/2022-10-07/test-maven-installation.jpg)
 
@@ -128,21 +132,33 @@ Spring telah menyediakan sebuah web utility untuk mengenerate project.
 
    ![Open Project](/images/2022-10-07/open-project.jpg)
 
-4. Buka file **ProjectPertamaApplication.java** pada folder **\src\main\java\io\github\dedeirwanto**. Tambahkan kode berikut:
+4. Buka file **ProjectPertamaApplication.java** pada folder **\src\main\java\io\github\dedeirwanto**.
+   Tambahkan kode berikut sebelum **public class**:
 
-   `@GetMapping("/hello")`
+   ```
+   @RestController
+   ```
 
-   `public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {`
+   Tambahkan kode berikut sesudah **public static void**:
 
-   > `return String.format("Hello %s!", name);`
+   ```
+   @GetMapping("/hello")
+   public String hello() {
+      return "Hello world";
+   }
+   ```
 
-   `}`
+   Kurang lebih potongan kode di atas seperti gambar berikut:
 
    ![Add Code Hello](/images/2022-10-07/add-code-hello.jpg)
 
+   Pembahasan mengenai fungsi kode di atas akan dibahas pada bab tersendiri nanti.
+
 5. Jalankan Spring Boot.
 
-   `mvnw spring-boot:run`
+   ```
+   mvn spring-boot:run
+   ```
 
    ![Run Spring Boot](/images/2022-10-07/run-spring-boot.jpg)
 
