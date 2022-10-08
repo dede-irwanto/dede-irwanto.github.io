@@ -5,7 +5,7 @@ tags: ["Database", "Oracle"]
 keywords: Database, Oracle, 19C
 ---
 
-Berikut adalah langkah-langkan installasi oracle 19c Enterprise Edition di Docker:
+Berikut adalah langkah-langkah installasi oracle 19c Enterprise Edition di Docker:
 
 **1. Clone repository Oracle Docker Image**
 
