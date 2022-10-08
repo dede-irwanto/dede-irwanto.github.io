@@ -152,7 +152,7 @@ Spring telah menyediakan sebuah web utility untuk mengenerate project.
 
    ![Add Code Hello](/images/2022-10-07/add-code-hello.jpg)
 
-   Pembahasan mengenai fungsi kode di atas akan dibahas pada bab tersendiri nanti.
+   Penjelasan mengenai fungsi kode di atas akan dibahas pada bab tersendiri nanti.
 
 5. Jalankan Spring Boot.
 
