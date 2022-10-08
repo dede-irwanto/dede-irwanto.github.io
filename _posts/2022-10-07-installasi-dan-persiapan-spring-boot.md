@@ -144,7 +144,7 @@ Spring telah menyediakan sebuah web utility untuk mengenerate project.
    ```
    @GetMapping("/hello")
    public String hello() {
-      return "Hello world";
+      return "Hello World!";
    }
    ```
 
