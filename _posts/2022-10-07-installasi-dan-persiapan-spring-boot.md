@@ -152,7 +152,7 @@ Spring telah menyediakan sebuah web utility untuk mengenerate project.
 
    Jika output yang ditampilkan oleh browser seperti gambar di atas maka project pertama kita sudah berhasil.
 
-Selesai sudah pembahasan **Spring Boot** pada tahap persiapan dan installasi. Next mungkin akan dibahas mengenai **Spring Boot Dasar**.
+Selesai sudah pembahasan **Spring Boot** pada tahap persiapan dan installasi. Next mungkin akan dibahas mengenai **Customisasi Spring Boot**.
 
 CMIIW.
 
