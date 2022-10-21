@@ -11,7 +11,8 @@ keywords: PHP, CSS, HTML, JavaScript, Java, Laravel, CodeIgniter, Spring Boot, M
             <h1 class="fw-bold">dede-irwanto.github.io</h1>
             <span class="lead">Tulisan seorang pemalas.</span><br />
             <hr class="border border-dark border-2 opacity-50" width="230px">
-            <span class="small">Ikatlah ilmu dengan postingan.</span>
+            <a class="btn btn-dark btn-lg" href="https://saweria.co/dedeirwanto" target="_blank"
+                rel="noopener noreferrer">DONATE</a>
         </div>
         <div class="feature col-6 d-none d-lg-block">
             <img src="/images/jumbotron-img.jpg" class="img-fluid">
@@ -20,15 +21,15 @@ keywords: PHP, CSS, HTML, JavaScript, Java, Laravel, CodeIgniter, Spring Boot, M
 </div>
 <!-- End Feature -->
 
-<!-- Start Article & Sidebar -->
+<!-- Start Article -->
 <div class="container">
     <div class="row">
         <!-- Article -->
-        <div class="col-lg-9">
+        <div class="col-12">
             <div class="row">
                 {% for post in site.posts %}
                 {%assign i = forloop.index | times: 200 %}
-                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="{{i}}">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="{{i}}">
                     {%include postcard.html%}
                 </div>
                 {% endfor %}
@@ -37,14 +38,6 @@ keywords: PHP, CSS, HTML, JavaScript, Java, Laravel, CodeIgniter, Spring Boot, M
                 <button class="btn btn-danger" id="loadMore">Tampilkan artikel lainnya...</button>
             </div>
         </div>
-        <!-- Sidebar -->
-        <div class="col-lg-3">
-            <div class="row">
-                <div class="col-12">
-                    {%include sidebar.html%}
-                </div>
-            </div>
-        </div>
     </div>
 </div>
-<!-- End Article & Sidebar -->
+<!-- End Article -->
