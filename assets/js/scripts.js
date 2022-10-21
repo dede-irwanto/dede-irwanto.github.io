@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $("img").addClass("img-fluid");
-  $(".post-card > *").slice(0, 8).show();
+  $(".post-card > *").slice(0, 18).show();
   $("#loadMore").on("click", function (e) {
     e.preventDefault();
-    $(".post-card > *:hidden").slice(0, 8).slideDown();
+    $(".post-card > *:hidden").slice(0, 6).slideDown();
     if ($(".post-card > *:hidden").length == 0) {
       $("#load").fadeOut("slow");
     }
